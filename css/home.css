@@ -1,7 +1,13 @@
-body {
+/*! FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+/* ! */
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .bg {
@@ -12,4 +18,154 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh; 
+  z-index: 2;
+}
+
+.showcase header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 80px;
+  z-index: 100;
+  font-size: 1.3rem;
+  color: #f00a2cd2;
+}
+
+.text h2 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #f31c3cd5;
+}
+
+.text p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  font-weight: 500;
+  font-style: italic;
+  color: #111;
+  opacity: 0.7;
+}
+
+.text {
+  text-align: center;
+  margin-top: 40vh;
+  padding: 0 20px;
+}
+
+.text a {
+  display: inline-block;
+  font-size: 1rem;
+  background-color: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #111;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  border-radius: 25px;
+  color: #222;
+}
+
+.text a:hover {
+  letter-spacing: 3px;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mouse {
+  width: 2rem;
+  height: 4rem;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+.mouse span{
+  width: .5rem;
+  height: .5rem;
+  background-color: #fff;
+  display: block;
+  border-radius: 50%;
+  margin: auto;
+  animation: move-wheel 1s linear infinite;
+}
+
+.arrow span{
+  display: block;
+  width: .7rem;
+  height: .7rem;
+  border: 2px solid transparent;
+  border-right-color: #fff;
+  border-bottom-color: #fff ;
+  transform: rotate(45deg);
+  animation: arrow-down 1s alternate infinite;
+}
+
+@keyframes move-wheel {
+
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(1rem);
+  }
+
+}
+
+@keyframes arrow-down {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: .5;
+  }
+  75% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media(max-width: 991px) {
+  .showcase, .showcase header {
+    padding: 40px;
+  }
+
+  .text h2 {
+    font-size: 3rem;
+  }
+
+  .text a {
+    font-size: 0.8rem;
+  }
+
+  header {
+    font-size: 1rem;
+  }
 }
