@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Titillium Web", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .bg {
@@ -22,7 +23,6 @@
 
 .showcase {
   background-color: rgba(1, 5, 2, 0.5);
-  position: absolute;
   right: 0;
   width: 100%;
   min-height: 100vh;
@@ -49,7 +49,7 @@
   font-weight: 700;
   line-height: 1.2em;
   text-transform: uppercase;
-  color: #f10000;
+  color: #e72222;
 }
 
 .text p {
@@ -123,7 +123,60 @@
   animation: arrow-down 1s alternate infinite;
 }
 
+
+.products {
+  z-index: 4;
+  width: 100%;
+  background-color: rgb(223, 216, 216);
+  align-items: center;
+  text-align: center;
+  padding: 30px;  
+}
+
+.products h1 {
+  margin-left: 20px;
+  color: #e23f3f;
+}
+
+.images {
+  display: flex;
+}
+
+.product-img {
+  align-items: center;
+  text-align: center;
+}
+
+.product-img h3{
+  font-size: 20px;
+  color: #f5564e;
+}
+
+.product-img p {
+  color: #191c1f;
+}
+
+.products a {
+  display: inline-block;
+  font-size: 1rem;
+  background-color: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #111;
+  margin-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  border-radius: 25px;
+  color: #222;
+} 
+
+.products a:hover {
+  letter-spacing: 3px;
+}
+
 @keyframes move-wheel {
+
   0% {
     opacity: 0;
     transform: translateY(-1rem);
@@ -132,6 +185,7 @@
     opacity: 1;
     transform: translateY(1rem);
   }
+
 }
 
 @keyframes arrow-down {
@@ -142,20 +196,31 @@
     opacity: 0.25;
   }
   50% {
-    opacity: 0.5;
+    opacity: .5;
   }
   75% {
-    opacity: 0.75;
+    opacity: .75;
   }
   100% {
     opacity: 1;
   }
 }
 
-@media (max-width: 991px) {
-  .showcase,
-  .showcase header {
-    padding: 20px;
+@media(max-width: 1220px) {
+  img {
+    height: 270px;
+  }
+}
+
+@media(max-width: 1092px) {
+  img {
+    height: 220px;
+  }
+}
+
+@media(max-width: 991px) {
+  .showcase, .showcase header {
+    padding: 40px;
   }
 
   .text h2 {
@@ -168,5 +233,20 @@
 
   header {
     font-size: 1rem;
+  }
+  img {
+    height: 190px;
+  }
+  .product-img h3 {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 790px) {
+  .images {
+    flex-direction: column;
+  }
+  .product-img p {
+    font-size: 14px;
   }
 }
