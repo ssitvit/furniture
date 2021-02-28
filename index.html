@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bindle Bee</title>
     <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
   </head>
   <body>
     <section class="showcase">
@@ -54,68 +55,58 @@
           <p>Starting at Rs.4900</p>
         </div>
       </div>
-      <a href="/products.html">See More</a>
+      <a href="products.html">See More</a>
     </div>
 
-    <div id="Contact" class="container">
+    <div class="container" id="Contact">
       <h1 class="formc">Contact Us</h1>
-      <div class="contact-us">
-        <div class="contact-left">
-          <img
-            class="contact-img"
-            src="./assets/contact-image.jpg"
-            alt="Contact Us"
-          />
-        </div>
-        <div class="contact-right">
-          <form class="for">
-            <label for="fname">First Name</label>
-            <input
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Your name.."
-            />
-            <label for="country">Email</label>
-            <input
-              type="text"
-              id="country"
-              name="Email"
-              placeholder="Your Email.."
-            />
-            <label for="country">Phone</label>
-            <input
-              type="text"
-              id="country"
-              name="Phone"
-              placeholder="Your Phone number.."
-            />
-            <label for="subject">Message</label>
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Your Message"
-              style="height: 100px"
-            ></textarea>
-            <input type="submit" value="Submit" />
-          </form>
+      <div class="container-form">
+        <div class="content">
+          <div class="image-box">
+            <img src="./assets/contact-us.svg" alt="">
+          </div>
+
+        <form action ="#" class="for">
+          <div class="input-box">
+            <input type="text" id="name" name="yourname" required>
+            <label for="name">Your Name</label>
+          </div>
+          <div class="input-box">
+            <input type="text" id="country" name="Email" required>
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <input type="text" id="country" name="phone"  required>
+            <label for="country">Phone Number</label>
+          </div>
+          <div class="msg-box">
+            <textarea id="subject" name="subject"></textarea>
+            <label>Message</label>
+          </div>
+          <div class="input-box">
+            <input type="submit" value="Send Message">
+          </div>
+        </form>
         </div>
       </div>
     </div>
 
     <div class="foot">
-      <h3 class="footh">Bindle Bee</h3>
-      <h4>
-        Address:<br />
-        Andheri Road , 44200,Delhi-15
-      </h4>
-      <h4>
-        Find Us on<br />
-        <a href="#">Facebook</a><br />
-        <a href="#">Instagram</a><br />
-        <a href="#">Whatsapp</a><br />
-        Give us a ring +9190009786
-      </h4>
-    </div>
+      <h2>Bindle Bee</h2>
+      <div class="footer">
+        <div class="address">
+        <p> <span class="foot-heading">Address:</span><br> Andheri Road, 44200, Delhi-15</p>
+        </div>
+        <div class="links">
+          <p>Find Us On</p>
+          <a href=""><i class="fab fa-facebook"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-whatsapp"></i></a>
+        </div>  
+        <div class="phone">
+          <p> <span class="foot-heading">Give us a ring on </span><br>+91900099786</p>
+        </div>
+      </div>
+    </div>  
   </body>
 </html>
