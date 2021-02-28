@@ -1,124 +1,120 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Roboto', sans-serif;
+/*! FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap");
+
+/* ! */
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 500;
 }
 /* navbar  */
-.first{
-    height: 77px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    font-weight: 900;
-    font-size: 20px;
-    background-color: rgba(194, 179, 194, 0.616);
-
-}
-
-.logo{
-    position: absolute;
-    left: 1%;
-}
-.home{
-    position:absolute;
-    left: 94%;
+.first {
+  height: 70px;
+  padding: 0.5em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ec3535;
+  background-color: #222;
 }
 
 /* .products  */
-.heading{
-    margin-top: 30px;
-}
-.addon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: underline;
-    text-decoration-style: double;
-    
-}
-.addon img{
-    height:40px ;
-    width: 40px;
-   
-}
-.products h2{
-    margin-top: 12px;
-    text-align: center;
-}
-.chairs{
-    margin-top: 34px;
-    
-}
-.chairs h3{
-    padding-left: 50px;
-}
-.sofa{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.164);
-    width: 95%;
-    margin-left:38px ;
-    height: 30%;
-}
-.sofa1{
-    /* margin: 7px 57px; */
-    /* border: 1px solid rgb(17, 17, 17); */
-    cursor: pointer;
-}
-.sofa1:hover{
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.411),-7px -7px 10px rgba(0, 0, 0, 0.233);
-
-    
-}
-.sofa1 img{
-    height: 308px;
-    width: 257px;
-}
-.price{
-    text-align: center;
-}
-.price h5{
-    color: rgba(230, 21, 21, 0.877);
-}
-.space{
-    margin: 37px 0px;
+.products {
+  padding: 1em 0;
+  background-color: rgb(223, 216, 216);
 }
 
+.addon {
+  text-align: center;
+  font-weight: 600;
+  color: #e23f3f;
+}
+
+.home {
+  text-decoration: none;
+  color: inherit;
+}
+
+.products h2 {
+  margin-top: 12px;
+  text-align: center;
+}
+.chairs {
+  margin-bottom: 1em;
+}
+.chairs h3 {
+  padding-left: 50px;
+}
+.sofa {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 95%;
+  height: 30%;
+}
+.sofa1 {
+  margin: 1em;
+  padding: 1em 0;
+  cursor: pointer;
+}
+.sofa1:hover {
+  transition: 0.6s ease;
+  box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.3);
+}
+.sofa1 img {
+  width: 250px;
+}
+.price {
+  text-align: center;
+}
+.price h5 {
+  color: rgba(230, 21, 21, 0.877);
+}
+.space {
+  margin: 37px 0px;
+}
 
 /* extra css  */
-.ver:after{
-    content: '';
-    position: relative;
-    width: 0; height: 1.5px;
-    display: block;
-    margin-top: 5px;
-    right: 0;
-    background: rgb(141, 49, 49);
-    transition: width 0.7s ease;
-    -webkit-transition: width 0.7s ease;
-  }
-  .ver:hover:after{
-    width: 100%;
-    left: 0;
-    background: rgb(141, 43, 43);
-  }
-.chairs h3:after{
-    content: '';
-    position: relative;
-    width: 0; height: 1.5px;
-    display: block;
-    margin-top: 5px;
-    right: 0;
-    background: rgb(0, 0, 0);
-    transition: width 0.7s ease;
-    -webkit-transition: width 0.7s ease;
-  }
-  .chairs h3:hover:after{
-    width: 50px;
-    left: 0;
-    background: rgb(0, 0, 0);
-  }
-
+.ver:after {
+  content: "";
+  position: relative;
+  width: 0;
+  height: 1.5px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: rgb(141, 49, 49);
+  transition: width 0.7s ease;
+  -webkit-transition: width 0.7s ease;
+}
+.ver:hover:after {
+  width: 100%;
+  left: 0;
+  background: rgb(141, 43, 43);
+}
+.chairs h3:after {
+  content: "";
+  position: relative;
+  width: 0;
+  height: 1.5px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: rgb(0, 0, 0);
+  transition: width 0.7s ease;
+  -webkit-transition: width 0.7s ease;
+}
+.chairs h3:hover:after {
+  width: 50px;
+  left: 0;
+  background: rgb(0, 0, 0);
+}
 
 /* responsive  */
