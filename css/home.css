@@ -22,7 +22,7 @@
 }
 
 .showcase {
-  background-color: rgba(1, 5, 2, 0.4);
+  background-color: rgba(1, 5, 2, 0.5);
   right: 0;
   width: 100%;
   min-height: 100vh;
@@ -123,13 +123,14 @@
   animation: arrow-down 1s alternate infinite;
 }
 
+
 .products {
   z-index: 4;
   width: 100%;
   background-color: rgb(223, 216, 216);
   align-items: center;
   text-align: center;
-  padding: 30px;
+  padding: 30px;  
 }
 
 .products h1 {
@@ -139,8 +140,6 @@
 
 .images {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
 }
 
 .product-img {
@@ -148,7 +147,7 @@
   text-align: center;
 }
 
-.product-img h3 {
+.product-img h3{
   font-size: 20px;
   color: #f5564e;
 }
@@ -170,13 +169,14 @@
   transition: 0.2s;
   border-radius: 25px;
   color: #222;
-}
+} 
 
 .products a:hover {
   letter-spacing: 3px;
 }
 
 @keyframes move-wheel {
+
   0% {
     opacity: 0;
     transform: translateY(-1rem);
@@ -185,6 +185,7 @@
     opacity: 1;
     transform: translateY(1rem);
   }
+
 }
 
 @keyframes arrow-down {
@@ -195,31 +196,30 @@
     opacity: 0.25;
   }
   50% {
-    opacity: 0.5;
+    opacity: .5;
   }
   75% {
-    opacity: 0.75;
+    opacity: .75;
   }
   100% {
     opacity: 1;
   }
 }
 
-@media (max-width: 1220px) {
+@media(max-width: 1220px) {
   img {
     height: 270px;
   }
 }
 
-@media (max-width: 1092px) {
+@media(max-width: 1092px) {
   img {
     height: 220px;
   }
 }
 
-@media (max-width: 991px) {
-  .showcase,
-  .showcase header {
+@media(max-width: 991px) {
+  .showcase, .showcase header {
     padding: 40px;
   }
 
@@ -242,8 +242,41 @@
   }
 }
 
-@media (max-width: 790px) {
+@media(max-width: 790px) {
+  .images {
+    flex-direction: column;
+  }
   .product-img p {
     font-size: 14px;
   }
+}
+input[type=submit] {
+  background-color: #ce2a15;
+  color: white;
+  padding: 12px 20px;
+  border:none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #0e9c39;
+}
+.container {
+  display: block;
+  background-color: #f2f2f2;
+  padding: 18px;
+  display: inline;
+  display: block;
+}
+.foot{
+   vertical-align: top;
+   vertical-align: bottom;
+  background-color: rgb(223, 216, 216);
+}
+.formc{
+  color: #ce2a15;
+}
+.for{
+  display: inline;
+  display: block;
 }
