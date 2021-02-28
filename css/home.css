@@ -146,6 +146,10 @@
   align-items: center;
   text-align: center;
 }
+.product-img:hover{ 
+  transition: 0.6s ease;
+  box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.3);
+}
 
 .product-img h3 {
   font-size: 20px;
@@ -191,7 +195,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #0e9c39;
+  letter-spacing: 3px;
 }
 
 .container {
@@ -202,7 +206,7 @@ input[type="submit"]:hover {
 .foot {
   vertical-align: top;
   vertical-align: bottom;
-  background-color: rgb(223, 216, 216);
+  background-color: #a9a9a9
 }
 
 .formc {
@@ -226,7 +230,7 @@ input[type="submit"]:hover {
 }
 
 .contact-right {
-  margin: 1em;
+  margin: 3em;
   flex: 0 50%;
 }
 
