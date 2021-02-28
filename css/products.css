@@ -121,11 +121,10 @@
   vertical-align: top;
   vertical-align: bottom;
   background-color: #222;
-  padding-bottom: 20px;
-  padding-top: 15px;
+  padding: 20px 0;
 }
 
-.foot h2{
+.foot h2 {
   margin-left: 30px;
   color: #e23f3f;
 }
@@ -143,7 +142,7 @@
   font-weight: bold;
 }
 
-.links p{
+.links p {
   font-weight: bold;
 }
 
@@ -162,11 +161,11 @@
 }
 /* responsive  */
 @media (max-width: 720px) {
-   .footer {
+  .footer {
     text-align: center;
     flex-direction: column;
   }
-  .foot h2{
+  .foot h2 {
     text-align: center;
   }
   .foot div {
