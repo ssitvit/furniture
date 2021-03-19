@@ -4,171 +4,171 @@
 /* ! */
 
 * {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 500;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 500;
 }
 /* navbar  */
 .first {
-  height: 70px;
-  padding: 0.5em 2em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 600;
-  font-size: 20px;
-  color: #ec3535;
-  background-color: #222;
+    height: 70px;
+    padding: 0.5em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ec3535;
+    background-color: #222;
 }
 
 /* .products  */
 .products {
-  padding: 1em 0;
-  background-color: rgb(223, 216, 216);
+    padding: 1em 0;
+    background-color: rgb(223, 216, 216);
 }
 
 .addon {
-  text-align: center;
-  font-weight: 600;
-  color: #e23f3f;
+    text-align: center;
+    font-weight: 600;
+    color: #e23f3f;
 }
 
 .home {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 .products h2 {
-  margin-top: 12px;
-  text-align: center;
+    margin-top: 12px;
+    text-align: center;
 }
 .chairs {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 .chairs h3 {
-  padding-left: 50px;
+    padding-left: 50px;
 }
 .sofa {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin: 10px auto;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  width: 95%;
-  height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 95%;
+    height: 30%;
 }
 .sofa1 {
-  margin: 1em;
-  padding: 1em 0;
-  cursor: pointer;
+    margin: 1em;
+    padding: 1em 0;
+    cursor: pointer;
 }
 .sofa1:hover {
-  transition: 0.6s ease;
-  box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.3);
+    transition: 0.6s ease;
+    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.3);
 }
 .sofa1 img {
-  width: 250px;
+    width: 250px;
 }
 .price {
-  text-align: center;
+    text-align: center;
 }
 .price h5 {
-  color: rgba(230, 21, 21, 0.877);
+    color: rgba(230, 21, 21, 0.877);
 }
 .space {
-  margin: 37px 0px;
+    margin: 37px 0px;
 }
 
 /* extra css  */
 .ver:after {
-  content: "";
-  position: relative;
-  width: 0;
-  height: 1.5px;
-  display: block;
-  margin-top: 5px;
-  right: 0;
-  background: rgb(141, 49, 49);
-  transition: width 0.7s ease;
-  -webkit-transition: width 0.7s ease;
+    content: "";
+    position: relative;
+    width: 0;
+    height: 1.5px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: rgb(141, 49, 49);
+    transition: width 0.7s ease;
+    -webkit-transition: width 0.7s ease;
 }
 .ver:hover:after {
-  width: 100%;
-  left: 0;
-  background: rgb(141, 43, 43);
+    width: 100%;
+    left: 0;
+    background: rgb(141, 43, 43);
 }
 .chairs h3:after {
-  content: "";
-  position: relative;
-  width: 0;
-  height: 1.5px;
-  display: block;
-  margin-top: 5px;
-  right: 0;
-  background: rgb(0, 0, 0);
-  transition: width 0.7s ease;
-  -webkit-transition: width 0.7s ease;
+    content: "";
+    position: relative;
+    width: 0;
+    height: 1.5px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: rgb(0, 0, 0);
+    transition: width 0.7s ease;
+    -webkit-transition: width 0.7s ease;
 }
 .chairs h3:hover:after {
-  width: 50px;
-  left: 0;
-  background: rgb(0, 0, 0);
+    width: 50px;
+    left: 0;
+    background: rgb(0, 0, 0);
 }
 
 .foot {
-  vertical-align: top;
-  vertical-align: bottom;
-  background-color: #222;
-  padding: 20px 0;
+    vertical-align: top;
+    vertical-align: bottom;
+    background-color: #222;
+    padding: 20px 0;
 }
 
 .foot h2 {
-  margin-left: 30px;
-  color: #e23f3f;
+    margin-left: 30px;
+    color: #e23f3f;
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  padding-bottom: 20px;
-  padding: 0px 30px;
-  color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding: 0px 30px;
+    color: #f2f2f2;
 }
 
 .foot-heading {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .links p {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .links a {
-  text-decoration: none;
-  color: #191c1f;
+    text-decoration: none;
+    color: #191c1f;
 }
 .links {
-  text-align: center;
+    text-align: center;
 }
 
 .links i {
-  font-size: 24px;
-  margin: 2.5px 5px 0;
-  color: #f2f2f2;
+    font-size: 24px;
+    margin: 2.5px 5px 0;
+    color: #f2f2f2;
 }
 /* responsive  */
 @media (max-width: 720px) {
-  .footer {
-    text-align: center;
-    flex-direction: column;
-  }
-  .foot h2 {
-    text-align: center;
-  }
-  .foot div {
-    margin-bottom: 15px;
-  }
+    .footer {
+        text-align: center;
+        flex-direction: column;
+    }
+    .foot h2 {
+        text-align: center;
+    }
+    .foot div {
+        margin-bottom: 15px;
+    }
 }
