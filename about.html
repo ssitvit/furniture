@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/products.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+            integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+            crossorigin="anonymous"
+        />
+        
+        <title>Document</title>
+
+        <style>
+            body{
+                background-color:rgb(223, 216, 216) ;
+            }
+            .para{
+                text-align: center;
+                height: auto;
+                width: 100%;
+                padding: 1.8rem 3rem;
+                font-family:'Times New Roman', Times, serif;
+               
+            }
+            .para p{
+                font-weight: 500;
+                font-size: 1.09rem;
+            }
+            .about{
+                display: flex;
+                align-items: center;
+                padding-left: 2%;
+            }
+           .about  img {
+            height:40vh ;
+            width: 40vh;
+            
+                } 
+                .navigation{
+                    justify-content: space-between;
+                    padding: 3% ;
+                   
+
+                }
+                .navigation div a{
+                    text-decoration: none;
+                    color: white;
+                }
+                .exp{
+                    position: relative;
+                    left: 4%;
+                }
+              .foot{
+                  position: fixed;
+                  bottom: 0;
+                  width: 100%;
+              }
+              @media (max-width: 700px) {
+                  .foot{position: relative;
+                width: 100%;} 
+                  
+              }
+              @media (max-width: 450px) {
+                .about  img {
+                    display: none;
+  
+                } 
+              /* @media (max-width: 711px) {
+                /* .exp a{
+                    position: relative;
+                    left: 0%;
+                } */
+                  
+              } */
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="first">
+                <div class="logo">Bindle Bee</div>
+                <a href="/index.html" class="home ver">Home</a>
+            </div>
+        </nav>
+
+        <div class="products" id="Products" >
+            <h1 style="text-align: center;">About us</h1>
+        </div>
+        <div class="about products">
+           
+            <p style="text-align: center;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos maxime repellendus cum minus voluptatem commodi ad fugit adipisci repudiandae! Quos aut aperiam minus eos odio animi similique excepturi blanditiis nulla consectetur alias a, ratione molestias dolorem veritatis, veniam eius. Corrupti molestias quaerat quam saepe odit tempore alias eaque eius repellendus ab, cumque aliquid maxime quidem nisi consequuntur officia et debitis atque accusantium eligendi. Provident labore inventore ea mollitia commodi molestias tempore ipsam libero adipisci incidunt officiis illo nemo vero, perferendis in possimus quis nobis laboriosam laborum odio pariatur optio sequi fugit quaerat. Accusantium, vero at architecto accusamus a laudantium eveniet.</p>
+            <p><img class="aboutimage" src="./assets/single-sofa.png"  alt=""></p>
+        </div>
+           
+            
+        
+
+        <div class="foot">
+            <h2>Bindle Bee</h2>
+            <div class="footer">
+                <div class="address">
+                    <p>
+                        <span class="foot-heading">Address:</span><br />
+                        Andheri Road, 44200, Delhi-15
+                    </p>
+                    
+                </div>
+                <div class="links">
+                    <p>Find Us On</p>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="phone">
+                    <p>
+                        <span class="foot-heading">Give us a ring on </span
+                        ><br />+91900099786
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="navigation" style="display: flex;  ">
+                <div ><a href="/index.html">HOME</a></div>
+                <div class="exp"><a href="/products.html">PRODUCTS</a></div>
+                <div><a href="/about.html">ABOUT</a></div>
+                
+            </div>
+        </div>
+    
+        <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    </body>
+</html>
