@@ -357,6 +357,11 @@ input[type="submit"]:hover {
     font-weight: bold;
 }
 
+.navigation div a {
+    text-decoration: none;
+    color: white;
+}
+
 .links a {
     text-decoration: none;
     color: #f2f2f2;

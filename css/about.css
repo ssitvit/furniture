@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(223, 216, 216);
+}
+.para {
+    text-align: center;
+    height: auto;
+    width: 100%;
+    padding: 1.8rem 3rem;
+    font-family: "Times New Roman", Times, serif;
+}
+.para p {
+    font-weight: 500;
+    font-size: 1.09rem;
+}
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.aboutText {
+    max-width: 600px;
+}
+
+.about img {
+    height: 40vh;
+    width: 40vh;
+}
+
+.navigation div a {
+    text-decoration: none;
+    color: white;
+}
+.exp {
+    position: relative;
+    left: 4%;
+}
+.foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 700px) {
+    .foot {
+        position: relative;
+        width: 100%;
+    }
+
+    .about img {
+        display: none;
+    }
+}

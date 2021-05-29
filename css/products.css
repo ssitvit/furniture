@@ -142,6 +142,11 @@
     font-weight: bold;
 }
 
+.navigation div a {
+    text-decoration: none;
+    color: white;
+}
+
 .links p {
     font-weight: bold;
 }
